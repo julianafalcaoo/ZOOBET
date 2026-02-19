@@ -32,8 +32,8 @@ GET /animals: listar animais disponíveis
 
 ## RODAR O PROJETO
 1. clonar 
-</git clone <URL_DO_REPOSITORIO>
-cd zoobet>
+git clone https://github.com/julianafalcaoo/ZOOBET.git
+cd ZOOBET
 
 2. inicializar container docker
-</docker-compose up --build>
+docker-compose up --build
