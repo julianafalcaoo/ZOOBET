@@ -7,6 +7,7 @@ Frontend: React (Vite)
 Banco de Dados: PostgreSQL 
 Infraestrutura: ambiente isolado via Docker
 Versionamento: Git, GitHub, GitHub Projects, GitHub Actions
+Autenticação: JWT
 
 ## Arquitetura do Sistema
 
