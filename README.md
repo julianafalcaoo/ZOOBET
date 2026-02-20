@@ -17,7 +17,7 @@ O projeto segue uma arquitetura em camadas, separando responsabilidades:
 - Camada de Dados
 - Camada de Contrato de API: define endpoints REST consumidos pelo frontend.
 
-## Contrato de API (endpoints)
+## Endpoints
 POST /auth/register: registrar novo usuário
 
 POST /auth/login: autenticar usuário
@@ -28,7 +28,6 @@ POST /bets: criar nova aposta
 
 GET /results: obter resultados dos sorteios
 
-GET /animals: listar animais disponíveis
 
 ## RODAR O PROJETO
 1. clonar 
