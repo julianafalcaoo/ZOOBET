@@ -8,6 +8,10 @@ models.Base.metadata.create_all(bind=engine)
 
 app = FastAPI()
 
+@app.get("/")
+def root():
+    return {"msg": "API funcionando"}
+
 app.add_middleware(
     CORSMiddleware,
     allow_origins=["*"],
