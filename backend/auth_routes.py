@@ -36,7 +36,7 @@ def registrar(usuario: schemas.UsuarioCreate, db: Session = Depends(get_db)):
 @router.post("/login", response_model=schemas.Token)
 def login(dados: schemas.UsuarioLogin, db: Session = Depends(get_db)):
     usuario = db.query(models.Usuario).filter(models.Usuario.email == dados.email).first()
-
+    
     if not usuario or not auth_service.verificar_senha(dados.senha, usuario.senha):
         raise HTTPException(status_code=401, detail="Credenciais inválidas")
 
