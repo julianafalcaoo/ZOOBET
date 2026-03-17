@@ -2,7 +2,8 @@ from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
 import models
 from database import engine
-from backend.routes.auth_routes import router as auth_router
+from routes.auth_routes import router as auth_router
+from routes.aposta_routes import router as aposta_router
 
 models.Base.metadata.create_all(bind=engine)
 
@@ -21,4 +22,5 @@ app.add_middleware(
 )
 
 app.include_router(auth_router)
+app.include_router(aposta_router, prefix="/apostas")
 # uvicorn main:app --reload 
