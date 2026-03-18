@@ -20,4 +20,4 @@ class Aposta(Base):
     valor = Column(Float, nullable=False)
     premio = Column(Float, nullable=False)
     status = Column(String, nullable=False)  #ganhou ou perdeu
-    criado_em = Column(DateTime(timezone=True), server_default=func.now())
+    criacao = Column(DateTime(timezone=True), server_default=func.now())
