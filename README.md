@@ -23,9 +23,9 @@ POST /auth/register: registrar novo usuário
 
 POST /auth/login: autenticar usuário
 
-GET /bets: listar apostas do usuário
+GET /apostas/ historico: listar apostas do usuário
 
-POST /bets: criar nova aposta
+POST /apostas: criar nova aposta
 
 GET /results: obter resultados dos sorteios
 
