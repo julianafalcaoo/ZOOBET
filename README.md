@@ -4,8 +4,7 @@ Sistema web full stack para simulação do Jogo do Bicho, desenvolvido para fins
 ## Stack definida:
 Backend: FastAPI 
 Frontend: React (Vite) 
-Banco de Dados: PostgreSQL 
-Infraestrutura: ambiente isolado via Docker
+Banco de Dados: PostgreSQL (Docker)
 Versionamento: Git, GitHub, GitHub Projects, GitHub Actions
 Autenticação: JWT
 
